@@ -31,6 +31,29 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const openSolutions = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setSolutionsOpen(true);
+  };
+
+  const closeSolutionsSoon = () => {
+    if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    closeTimeoutRef.current = setTimeout(() => {
+      setSolutionsOpen(false);
+      closeTimeoutRef.current = null;
+    }, 180);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    };
+  }, []);
 
   const isActiveLink = (href: string) =>
     href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
@@ -107,7 +130,13 @@ export function Navbar() {
             <div className="hidden lg:flex items-center gap-1">
               {NAV_LINKS.map((link) =>
                 link.dropdown ? (
-                  <div key={link.label} className="relative" ref={dropdownRef}>
+                  <div
+                    key={link.label}
+                    className="relative"
+                    ref={dropdownRef}
+                    onMouseEnter={openSolutions}
+                    onMouseLeave={closeSolutionsSoon}
+                  >
                     <button
                       className={cn(
                         "flex items-center gap-1 px-3.5 py-2 text-sm font-medium rounded-lg transition-colors duration-150",
@@ -115,8 +144,6 @@ export function Navbar() {
                         (solutionsOpen || isActiveLink(link.href)) &&
                           "text-brand-blue bg-blue-50/60"
                       )}
-                      onMouseEnter={() => setSolutionsOpen(true)}
-                      onMouseLeave={() => setSolutionsOpen(false)}
                       onClick={() => setSolutionsOpen((v) => !v)}
                       aria-expanded={solutionsOpen}
                       aria-haspopup="menu"
@@ -132,17 +159,15 @@ export function Navbar() {
                     {/* Dropdown */}
                     <div
                       className={cn(
-                        "absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[640px]",
-                        "bg-white rounded-2xl border border-surface-border shadow-xl",
+                        "absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[640px]",
                         "transition-all duration-200 origin-top",
                         solutionsOpen
                           ? "opacity-100 scale-100 pointer-events-auto"
                           : "opacity-0 scale-95 pointer-events-none"
                       )}
-                      onMouseEnter={() => setSolutionsOpen(true)}
-                      onMouseLeave={() => setSolutionsOpen(false)}
                     >
-                      <div className="p-5 grid grid-cols-5 gap-5">
+                      <div className="bg-white rounded-2xl border border-surface-border shadow-xl">
+                        <div className="p-5 grid grid-cols-5 gap-5">
                         {/* Solutions list */}
                         <div className="col-span-3 space-y-1">
                           <p className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-3 px-3">
@@ -217,6 +242,7 @@ export function Navbar() {
                           <p className="text-xs text-text-muted leading-relaxed mt-4 border-t border-surface-border pt-4">
                             Industrial & Digital Solutions — turnkey from field devices to dashboards.
                           </p>
+                        </div>
                         </div>
                       </div>
                     </div>
