@@ -182,7 +182,7 @@ export const PROCESS_STEPS = [
 ];
 
 export const CONTACT = {
-  email: "info@nuevamodo.com",
+  email: "info@nuevamodo.co.za",
   phone: "+1 (555) 000-0000",
   whatsapp: "+1 (555) 000-0000",
   region: "Available across industrial and commercial regions",

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
+import { CONTACT } from "@/lib/constants";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
 interface FormState {
@@ -93,29 +94,39 @@ export function ContactForm() {
     setSubmitMessage("");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-      });
+      const subject = `Project enquiry from ${form.name}${
+        form.company ? ` (${form.company})` : ""
+      }`;
 
-      const data = (await response.json()) as { message?: string };
+      const bodyLines = [
+        `Name: ${form.name}`,
+        form.company ? `Company: ${form.company}` : "",
+        `Email: ${form.email}`,
+        form.phone ? `Phone: ${form.phone}` : "",
+        form.industry ? `Industry: ${form.industry}` : "",
+        form.solution ? `Solution of Interest: ${form.solution}` : "",
+        "",
+        "Project Summary:",
+        form.message,
+      ]
+        .filter(Boolean)
+        .join("\n");
 
-      if (!response.ok) {
-        setSubmitError(data.message || "Something went wrong. Please try again.");
-        return;
-      }
+      const mailto = `mailto:${CONTACT.email}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(bodyLines)}`;
+
+      window.location.href = mailto;
 
       setSubmitMessage(
-        data.message ||
-          "Thanks for reaching out. Our team will review your message and get back to you shortly."
+        `We've opened your email client with your message pre-filled. If nothing happened, email us directly at ${CONTACT.email}.`
       );
       setSubmitted(true);
       setForm(emptyForm);
     } catch {
-      setSubmitError("Unable to send your message right now. Please try again.");
+      setSubmitError(
+        `Unable to open your email client. Please email us directly at ${CONTACT.email}.`
+      );
     } finally {
       setLoading(false);
     }

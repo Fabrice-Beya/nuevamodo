@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nuevamodo.com"),
+  metadataBase: new URL("https://nuevamodo.co.za"),
   title: {
     default: "Nueva Modo | Industrial IoT, Smart Monitoring & Software Solutions",
     template: "%s | Nueva Modo",
