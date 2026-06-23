@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/sections/ContactForm";
-import { Mail, Phone, MessageCircle, MapPin, User } from "lucide-react";
+import { Mail, Phone, MapPin, User } from "lucide-react";
 import { CONTACT, MANAGING_DIRECTOR } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -15,21 +15,12 @@ const contactItems = [
     label: "Email",
     value: CONTACT.email,
     href: `mailto:${CONTACT.email}`,
-    color: "teal" as const,
   },
   {
     icon: Phone,
     label: "Telephone",
     value: CONTACT.phoneDisplay,
     href: `tel:${CONTACT.phone.replace(/\s/g, "")}`,
-    color: "teal" as const,
-  },
-  {
-    icon: MessageCircle,
-    label: "WhatsApp",
-    value: "Chat with us on WhatsApp",
-    href: `https://wa.me/${CONTACT.whatsapp.replace(/\D/g, "")}`,
-    color: "green" as const,
   },
 ];
 
@@ -78,13 +69,7 @@ export default function ContactPage() {
                   const Icon = item.icon;
                   const content = (
                     <div className="flex items-start gap-4">
-                      <div
-                        className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
-                          item.color === "green"
-                            ? "bg-brand-green/10 text-brand-green"
-                            : "bg-brand-teal/10 text-brand-teal"
-                        }`}
-                      >
+                      <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-brand-teal/10 text-brand-teal">
                         <Icon className="w-5 h-5" strokeWidth={1.75} />
                       </div>
                       <div>
