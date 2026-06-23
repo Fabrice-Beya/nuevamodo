@@ -12,17 +12,21 @@ import {
   Menu,
   X,
   ArrowRight,
-  Settings2,
+  SlidersHorizontal,
   Wifi,
-  Activity,
+  Zap,
   Code2,
+  Sparkles,
+  Flame,
 } from "lucide-react";
 
 const solutionIcons: Record<string, React.ReactNode> = {
-  "Process Control & Instrumentation": <Settings2 className="w-4 h-4" strokeWidth={1.75} />,
-  "IoT Solutions": <Wifi className="w-4 h-4" strokeWidth={1.75} />,
-  "Smart Monitoring Solutions": <Activity className="w-4 h-4" strokeWidth={1.75} />,
+  "Electrical Engineering Services": <Zap className="w-4 h-4" strokeWidth={1.75} />,
+  "Process Control & Instrumentation": <SlidersHorizontal className="w-4 h-4" strokeWidth={1.75} />,
+  "Industrial IoT Solutions": <Wifi className="w-4 h-4" strokeWidth={1.75} />,
   "Software Based Solutions": <Code2 className="w-4 h-4" strokeWidth={1.75} />,
+  "Nano-Material Cleaning Technology": <Sparkles className="w-4 h-4" strokeWidth={1.75} />,
+  "Intelligent Fire Extinguisher": <Flame className="w-4 h-4" strokeWidth={1.75} />,
 };
 
 export function Navbar() {
@@ -122,7 +126,7 @@ export function Navbar() {
                 priority
               />
               <span className="text-lg font-extrabold tracking-tight text-text-dark leading-none">
-                Nueva<span className="text-brand-blue">Modo</span>
+                <span className="text-brand-teal">Nueva</span> Modo
               </span>
             </Link>
 
@@ -159,7 +163,7 @@ export function Navbar() {
                     {/* Dropdown */}
                     <div
                       className={cn(
-                        "absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[640px]",
+                        "absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[760px]",
                         "transition-all duration-200 origin-top",
                         solutionsOpen
                           ? "opacity-100 scale-100 pointer-events-auto"
@@ -169,10 +173,11 @@ export function Navbar() {
                       <div className="bg-white rounded-2xl border border-surface-border shadow-xl">
                         <div className="p-5 grid grid-cols-5 gap-5">
                         {/* Solutions list */}
-                        <div className="col-span-3 space-y-1">
+                        <div className="col-span-3">
                           <p className="text-xs font-semibold text-text-muted uppercase tracking-wider mb-3 px-3">
                             Solutions
                           </p>
+                          <div className="grid grid-cols-2 gap-1">
                           {link.dropdown.map((item) => (
                             <Link
                               key={item.label}
@@ -190,23 +195,21 @@ export function Navbar() {
                               >
                                 {solutionIcons[item.label]}
                               </span>
-                              <div>
+                              <div className="min-w-0">
                                 <div
                                   className={cn(
                                     "text-sm font-semibold transition-colors duration-150 leading-snug",
                                     isActiveLink(item.href)
-                                      ? "text-brand-blue"
-                                      : "text-text-dark group-hover:text-brand-blue"
+                                      ? "text-brand-teal"
+                                      : "text-text-dark group-hover:text-brand-teal"
                                   )}
                                 >
                                   {item.label}
                                 </div>
-                                <div className="text-xs text-text-muted mt-0.5 leading-relaxed">
-                                  {item.description}
-                                </div>
                               </div>
                             </Link>
                           ))}
+                          </div>
                         </div>
                         {/* Quick links */}
                         <div className="col-span-2 bg-surface-soft rounded-xl p-4 flex flex-col">
@@ -316,7 +319,7 @@ export function Navbar() {
                 className="h-8 w-auto object-contain"
               />
               <span className="text-base font-extrabold tracking-tight text-text-dark leading-none">
-                Nueva<span className="text-brand-blue">Modo</span>
+                <span className="text-brand-teal">Nueva</span> Modo
               </span>
             </div>
             <button

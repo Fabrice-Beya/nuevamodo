@@ -66,11 +66,11 @@ export default function ProcessControlPage() {
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-blue-50 text-brand-blue mb-6">
+              <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-brand-teal/10 text-brand-teal mb-6">
                 Solutions
               </span>
               <h1 className="text-display-lg font-bold text-text-dark mb-5 text-balance">
-                Process Control & Instrumentation
+                Process Control &amp; Instrumentation
               </h1>
               <p className="text-lg text-text-muted leading-relaxed">
                 Reliable, accurate, and intelligent control solutions for
@@ -154,7 +154,7 @@ export default function ProcessControlPage() {
                 recognised engineering standards. All systems are designed for
                 operational reliability, maintainability, and long service life.
               </p>
-              <CapabilityChipGroup chips={chips} variant="blue" />
+              <CapabilityChipGroup chips={chips} variant="teal" />
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function ProcessControlPage() {
         title="Talk to Us About Process Control"
         subtitle="Tell us about your process environment and we will help define the right control and instrumentation approach."
         primaryCTA={{ label: "Talk to Us About Process Control", href: "/contact" }}
-        variant="blue"
+        variant="dark"
       />
     </>
   );

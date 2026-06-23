@@ -15,41 +15,48 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nuevamodo.co.za"),
   title: {
-    default: "Nueva Modo | Industrial IoT, Smart Monitoring & Software Solutions",
+    default: "Nueva Modo | Electrical Engineering & Industrial Technology",
     template: "%s | Nueva Modo",
   },
   description:
-    "Nueva Modo delivers turnkey industrial technology solutions across smart metering, industrial IoT, smart monitoring, software systems, and process automation.",
+    "Nueva Modo is a South African electrical engineering and industrial technology company delivering protection & testing, commissioning, process control, industrial IoT, software, and licensed nano-material cleaning technology.",
   keywords: [
-    "industrial IoT",
-    "smart metering",
-    "smart monitoring",
+    "electrical engineering",
+    "protection and testing",
+    "plant commissioning",
     "process control",
+    "instrumentation",
     "SCADA",
     "PLC",
-    "software solutions",
-    "industrial technology",
+    "industrial IoT",
+    "smart metering",
+    "nano-material cleaning",
+    "thermographic survey",
+    "energy audit",
+    "South Africa",
+    "Kempton Park",
     "Nueva Modo",
   ],
   openGraph: {
-    title: "Nueva Modo | Industrial IoT, Smart Monitoring & Software Solutions",
+    title: "Nueva Modo | Electrical Engineering & Industrial Technology",
     description:
-      "Turnkey industrial technology solutions across smart metering, IoT, smart monitoring, and software.",
+      "Turnkey electrical engineering and industrial technology — protection & testing, commissioning, process control, IoT, software, and nano-material cleaning.",
     type: "website",
+    locale: "en_ZA",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Nueva Modo — Turnkey Industrial Technology Solutions",
+        alt: "Nueva Modo — Electrical Engineering & Industrial Technology",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nueva Modo | Industrial IoT, Smart Monitoring & Software Solutions",
+    title: "Nueva Modo | Electrical Engineering & Industrial Technology",
     description:
-      "Turnkey industrial technology solutions across smart metering, IoT, smart monitoring, and software.",
+      "Turnkey electrical engineering and industrial technology solutions, delivered end-to-end.",
     images: ["/images/og-image.jpg"],
   },
   icons: {

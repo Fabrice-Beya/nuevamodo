@@ -7,6 +7,10 @@ import {
   Wifi,
   Activity,
   Code2,
+  Zap,
+  SlidersHorizontal,
+  Sparkles,
+  Flame,
   LucideIcon,
 } from "lucide-react";
 
@@ -15,26 +19,44 @@ const iconMap: Record<string, LucideIcon> = {
   wifi: Wifi,
   activity: Activity,
   "code-2": Code2,
+  zap: Zap,
+  process: SlidersHorizontal,
+  sparkles: Sparkles,
+  flame: Flame,
 };
 
-const colorMap = {
-  blue: {
-    icon: "bg-brand-blue/10 text-brand-blue",
-    accent: "group-hover:text-brand-blue",
-    border: "hover:border-brand-blue/30",
-    dot: "bg-brand-blue",
+type SolutionColor = "teal" | "sky" | "green" | "orange" | "gold";
+
+const colorMap: Record<SolutionColor, { icon: string; text: string; accent: string; border: string }> = {
+  teal: {
+    icon: "bg-brand-teal/10 text-brand-teal",
+    text: "text-brand-teal",
+    accent: "group-hover:text-brand-teal",
+    border: "hover:border-brand-teal/40",
+  },
+  sky: {
+    icon: "bg-brand-sky/10 text-brand-sky",
+    text: "text-brand-sky",
+    accent: "group-hover:text-brand-sky",
+    border: "hover:border-brand-sky/40",
   },
   green: {
-    icon: "bg-emerald-50 text-emerald-600",
-    accent: "group-hover:text-emerald-600",
-    border: "hover:border-emerald-200",
-    dot: "bg-brand-green",
+    icon: "bg-brand-green/10 text-brand-green",
+    text: "text-brand-green",
+    accent: "group-hover:text-brand-green",
+    border: "hover:border-brand-green/40",
   },
   orange: {
-    icon: "bg-amber-50 text-amber-600",
-    accent: "group-hover:text-amber-600",
-    border: "hover:border-amber-200",
-    dot: "bg-brand-orange",
+    icon: "bg-brand-orange/10 text-brand-orange",
+    text: "text-brand-orange",
+    accent: "group-hover:text-brand-orange",
+    border: "hover:border-brand-orange/40",
+  },
+  gold: {
+    icon: "bg-brand-gold/10 text-brand-gold",
+    text: "text-brand-gold",
+    accent: "group-hover:text-brand-gold",
+    border: "hover:border-brand-gold/40",
   },
 };
 
@@ -42,7 +64,7 @@ interface SolutionCardProps {
   title: string;
   summary: string;
   icon: string;
-  color?: "blue" | "green" | "orange";
+  color?: SolutionColor;
   href: string;
   image?: string;
   className?: string;
@@ -52,7 +74,7 @@ export function SolutionCard({
   title,
   summary,
   icon,
-  color = "blue",
+  color = "teal",
   href,
   image,
   className,
@@ -80,24 +102,14 @@ export function SolutionCard({
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-deep-blue/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/70 via-brand-charcoal/10 to-transparent" />
           <div
             className={cn(
               "absolute top-4 left-4 w-11 h-11 rounded-xl flex items-center justify-center shadow-lg backdrop-blur-sm bg-white/95",
               "transition-transform duration-300 group-hover:scale-110"
             )}
           >
-            <Icon
-              className={cn(
-                "w-5 h-5",
-                color === "blue"
-                  ? "text-brand-blue"
-                  : color === "green"
-                    ? "text-emerald-600"
-                    : "text-amber-600"
-              )}
-              strokeWidth={1.75}
-            />
+            <Icon className={cn("w-5 h-5", colors.text)} strokeWidth={1.75} />
           </div>
         </div>
       )}

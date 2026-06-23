@@ -5,7 +5,7 @@ interface FeatureGridProps {
   items: string[];
   columns?: 1 | 2 | 3;
   className?: string;
-  iconColor?: "blue" | "green";
+  iconColor?: "blue" | "green" | "gold";
 }
 
 export function FeatureGrid({
@@ -27,7 +27,11 @@ export function FeatureGrid({
           <CheckCircle
             className={cn(
               "w-5 h-5 shrink-0 mt-0.5",
-              iconColor === "blue" ? "text-brand-blue" : "text-brand-green"
+              iconColor === "blue"
+                ? "text-brand-blue"
+                : iconColor === "green"
+                  ? "text-brand-green"
+                  : "text-brand-gold"
             )}
             strokeWidth={1.75}
           />

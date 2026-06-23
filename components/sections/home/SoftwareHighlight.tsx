@@ -32,23 +32,24 @@ export function SoftwareHighlight() {
 
           {/* Content */}
           <div>
-            <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-blue-50 text-brand-blue mb-5">
+            <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-brand-green/10 text-brand-green mb-5">
               Software Solutions
             </span>
             <h2 className="text-display-md font-bold text-text-dark mb-4 text-balance">
               Digital Systems That Improve Operational Efficiency
             </h2>
+            <div className="h-1 w-14 rounded-full bg-brand-green mb-6" />
             <p className="text-base text-text-muted leading-relaxed mb-7">
               We design and build software solutions that digitise manual
               workflows, automate business processes, and provide better
               visibility across operations.
             </p>
 
-            <CapabilityChipGroup chips={capabilities} variant="blue" className="mb-8" />
+            <CapabilityChipGroup chips={capabilities} variant="green" className="mb-8" />
 
             <Button
               href="/solutions/software-solutions"
-              variant="primary"
+              variant="secondary"
               size="md"
               icon={<ArrowRight className="w-4 h-4" />}
             >

@@ -8,13 +8,25 @@ interface SectionHeaderProps {
   align?: "left" | "center";
   className?: string;
   titleClassName?: string;
-  labelColor?: "blue" | "green" | "orange";
+  labelColor?: "blue" | "teal" | "sky" | "green" | "orange" | "gold";
 }
 
 const labelColors = {
-  blue: "text-brand-blue bg-blue-50",
-  green: "text-emerald-700 bg-emerald-50",
-  orange: "text-amber-700 bg-amber-50",
+  blue: "text-brand-teal bg-brand-teal/10",
+  teal: "text-brand-teal bg-brand-teal/10",
+  sky: "text-brand-sky bg-brand-sky/10",
+  green: "text-brand-green bg-brand-green/10",
+  orange: "text-brand-orange-deep bg-brand-orange/10",
+  gold: "text-brand-gold bg-brand-gold/10",
+};
+
+const barColors = {
+  blue: "bg-brand-teal",
+  teal: "bg-brand-teal",
+  sky: "bg-brand-sky",
+  green: "bg-brand-green",
+  orange: "bg-brand-orange",
+  gold: "bg-brand-gold",
 };
 
 export function SectionHeader({
@@ -53,6 +65,13 @@ export function SectionHeader({
       >
         {title}
       </h2>
+      <div
+        className={cn(
+          "mt-5 h-1 w-14 rounded-full",
+          barColors[labelColor],
+          align === "center" && "mx-auto"
+        )}
+      />
       {subtitle && (
         <p className="mt-4 text-lg text-text-muted leading-relaxed text-balance">
           {subtitle}

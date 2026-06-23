@@ -8,6 +8,8 @@ import {
   Globe,
   Thermometer,
   Truck,
+  Flame,
+  Mountain,
   LucideIcon,
 } from "lucide-react";
 
@@ -19,6 +21,8 @@ const iconMap: Record<string, LucideIcon> = {
   globe: Globe,
   thermometer: Thermometer,
   truck: Truck,
+  flame: Flame,
+  mountain: Mountain,
 };
 
 interface IndustryCardProps {

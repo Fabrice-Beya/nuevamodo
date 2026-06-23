@@ -51,14 +51,14 @@ export function FloatingCTA() {
           href={`mailto:${CONTACT.email}`}
           className="flex items-center gap-3 bg-white text-text-dark text-sm font-medium px-4 py-2.5 rounded-xl shadow-card hover:shadow-card-hover border border-surface-border transition-all duration-150"
         >
-          <Mail className="w-4 h-4 text-brand-blue shrink-0" strokeWidth={1.75} />
+          <Mail className="w-4 h-4 text-brand-teal shrink-0" strokeWidth={1.75} />
           Email Us
         </a>
         <a
-          href={`tel:${CONTACT.phone}`}
+          href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
           className="flex items-center gap-3 bg-white text-text-dark text-sm font-medium px-4 py-2.5 rounded-xl shadow-card hover:shadow-card-hover border border-surface-border transition-all duration-150"
         >
-          <Phone className="w-4 h-4 text-brand-blue shrink-0" strokeWidth={1.75} />
+          <Phone className="w-4 h-4 text-brand-teal shrink-0" strokeWidth={1.75} />
           Call Us
         </a>
         <a
@@ -75,7 +75,7 @@ export function FloatingCTA() {
           className="flex items-center gap-3 bg-white text-text-dark text-sm font-medium px-4 py-2.5 rounded-xl shadow-card hover:shadow-card-hover border border-surface-border transition-all duration-150"
           onClick={() => setOpen(false)}
         >
-          <FileText className="w-4 h-4 text-brand-blue shrink-0" strokeWidth={1.75} />
+          <FileText className="w-4 h-4 text-brand-teal shrink-0" strokeWidth={1.75} />
           Contact Form
         </Link>
       </div>
@@ -93,8 +93,8 @@ export function FloatingCTA() {
         <button
           onClick={() => setOpen((v) => !v)}
           className={cn(
-            "rounded-2xl shadow-blue flex items-center justify-center transition-all duration-200",
-            "bg-brand-blue text-white hover:bg-[#0c47a8] w-14 h-14",
+            "rounded-2xl shadow-orange flex items-center justify-center transition-all duration-200",
+            "bg-brand-orange text-white hover:bg-brand-orange-deep w-14 h-14",
             open && "scale-95"
           )}
           aria-label="Contact options"

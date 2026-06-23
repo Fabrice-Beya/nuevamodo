@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, SOLUTIONS } from "@/lib/constants";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
 interface FormState {
@@ -17,26 +17,21 @@ interface FormState {
 }
 
 const industries = [
+  "Power Generation",
+  "Petrochemical",
+  "Mining",
   "Industrial & Manufacturing",
   "Commercial Property",
-  "Real Estate Portfolio",
   "Utilities & Energy Infrastructure",
   "Municipal & Public Sector",
-  "Cold Chain & Refrigeration",
-  "Logistics & Mobile Assets",
+  "Transportation",
   "Other",
 ];
 
-const solutions = [
-  "Process Control & Instrumentation",
-  "IoT Solutions",
-  "Smart Monitoring Solutions",
-  "Software Based Solutions",
-  "General Enquiry",
-];
+const solutions = [...SOLUTIONS.map((solution) => solution.title), "General Enquiry"];
 
 const inputClasses =
-  "w-full px-4 py-3 text-sm text-text-dark bg-white border border-surface-border rounded-xl outline-none transition-all duration-150 placeholder:text-text-muted/50 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10";
+  "w-full px-4 py-3 text-sm text-text-dark bg-white border border-surface-border rounded-xl outline-none transition-all duration-150 placeholder:text-text-muted/50 focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/10";
 
 const labelClasses = "block text-sm font-semibold text-text-dark mb-1.5";
 const emptyForm: FormState = {
@@ -234,7 +229,7 @@ export function ContactForm() {
               autoComplete="tel"
               value={form.phone}
               onChange={handleChange}
-              placeholder="+1 (555) 000-0000"
+              placeholder="+27 ..."
               className={inputClasses}
             />
           </div>

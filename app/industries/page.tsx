@@ -21,7 +21,8 @@ export default function IndustriesPage() {
           <SectionHeader
             label="Industries"
             title="Industries & Environments"
-            subtitle="Nueva Modo solutions are designed to work across a wide range of physical and operational environments—from industrial plants to commercial property portfolios."
+            subtitle="With over 50 years of combined experience across power generation, petrochemical, mining, and transportation, our solutions work across a wide range of operational environments."
+            labelColor="orange"
             className="mb-14"
           />
 
@@ -47,19 +48,20 @@ export default function IndustriesPage() {
             label="Related Solutions"
             title="Solutions That Serve These Environments"
             subtitle="Each solution line is designed with real operational environments in mind."
+            labelColor="teal"
             className="mb-12"
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {SOLUTIONS.map((solution) => (
               <Link
                 key={solution.slug}
                 href={`/solutions/${solution.slug}`}
-                className="group p-5 bg-white rounded-2xl border border-surface-border hover:border-brand-blue/30 transition-all duration-200 card-hover"
+                className="group p-5 bg-white rounded-2xl border border-surface-border hover:border-brand-teal/30 transition-all duration-200 card-hover"
               >
-                <h3 className="text-sm font-semibold text-text-dark group-hover:text-brand-blue transition-colors mb-2">
+                <h3 className="text-sm font-semibold text-text-dark group-hover:text-brand-teal transition-colors mb-2">
                   {solution.title}
                 </h3>
-                <div className="flex items-center gap-1 text-xs font-medium text-text-muted group-hover:text-brand-blue transition-colors">
+                <div className="flex items-center gap-1 text-xs font-medium text-text-muted group-hover:text-brand-teal transition-colors">
                   Learn more <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
@@ -70,10 +72,10 @@ export default function IndustriesPage() {
 
       <CTABand
         title="See Use Cases for Your Environment"
-        subtitle="We work with clients across industrial, commercial, utility, and infrastructure sectors. Tell us about your project."
+        subtitle="We work with clients across power, petrochemical, mining, industrial, commercial, utility, and infrastructure sectors. Tell us about your project."
         primaryCTA={{ label: "Contact Nueva Modo", href: "/contact" }}
         secondaryCTA={{ label: "View Our Solutions", href: "/solutions" }}
-        variant="blue"
+        variant="dark"
       />
     </>
   );

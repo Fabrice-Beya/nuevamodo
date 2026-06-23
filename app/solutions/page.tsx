@@ -8,24 +8,24 @@ import { SOLUTIONS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Our Solutions",
   description:
-    "Nueva Modo delivers integrated industrial and digital solutions across process control, IoT, smart monitoring, and software systems.",
+    "Nueva Modo delivers electrical engineering, process control, industrial IoT, software, nano-material cleaning, and intelligent fire suppression.",
 };
 
 const capabilities = [
+  "Nano-material cleaning",
+  "Protection & testing",
+  "Plant commissioning",
+  "Thermographic surveys",
+  "Energy audits",
   "Smart metering",
   "Sensors & gateways",
   "LoRaWAN & 4G",
   "PLC / SCADA",
-  "Web applications",
-  "Mobile applications",
-  "Dashboards",
+  "Web & mobile apps",
   "APIs & integrations",
   "AI / computer vision",
-  "Alerts & automation",
-  "Cold chain monitoring",
-  "SCADA integration",
-  "Edge computing",
-  "Data analytics",
+  "Dashboards & analytics",
+  "Fire suppression",
 ];
 
 export default function SolutionsPage() {
@@ -37,11 +37,12 @@ export default function SolutionsPage() {
           <SectionHeader
             label="Solutions"
             title="Our Solutions"
-            subtitle="Nueva Modo delivers integrated industrial and digital solutions designed to improve visibility, control, and efficiency across operational environments."
+            subtitle="From electrical engineering and process control to connected systems, software, and our flagship innovations — delivered turnkey, end-to-end."
+            labelColor="orange"
             className="mb-14"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {SOLUTIONS.map((solution) => (
               <SolutionCard
                 key={solution.slug}
@@ -63,11 +64,12 @@ export default function SolutionsPage() {
           <SectionHeader
             label="Capabilities"
             title="Supporting Capabilities Across All Solutions"
-            subtitle="Underlying every solution is a broad technical capability spanning hardware, connectivity, software, and analytics."
+            subtitle="Underlying every solution is a broad technical capability spanning electrical engineering, hardware, connectivity, software, and analytics."
+            labelColor="teal"
             className="mb-10"
           />
           <div className="max-w-3xl mx-auto">
-            <CapabilityChipGroup chips={capabilities} variant="blue" />
+            <CapabilityChipGroup chips={capabilities} variant="teal" />
           </div>
         </div>
       </section>
@@ -76,7 +78,7 @@ export default function SolutionsPage() {
         title="Not Sure Which Solution Fits?"
         subtitle="Describe your environment and objectives—our team will help identify the right approach."
         primaryCTA={{ label: "Discuss a Project", href: "/contact" }}
-        variant="blue"
+        variant="dark"
       />
     </>
   );

@@ -18,15 +18,15 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-brand-blue text-white hover:bg-[#0A47A8] shadow-blue hover:shadow-lg focus-visible:ring-brand-blue",
+    "bg-brand-orange text-white hover:bg-brand-orange-deep shadow-orange hover:shadow-lg focus-visible:ring-brand-orange",
   secondary:
-    "bg-brand-deep-blue text-white hover:bg-[#071e4d] shadow-md hover:shadow-lg focus-visible:ring-brand-deep-blue",
+    "bg-brand-teal text-white hover:bg-brand-teal-deep shadow-teal hover:shadow-lg focus-visible:ring-brand-teal",
   outline:
-    "border-2 border-brand-blue text-brand-blue bg-white hover:bg-brand-blue hover:text-white hover:shadow-md focus-visible:ring-brand-blue",
+    "border-2 border-brand-teal text-brand-teal bg-white hover:bg-brand-teal hover:text-white hover:shadow-md focus-visible:ring-brand-teal",
   ghost:
-    "text-brand-blue bg-transparent hover:bg-blue-50 focus-visible:ring-brand-blue",
+    "text-brand-teal bg-transparent hover:bg-brand-teal/10 focus-visible:ring-brand-teal",
   white:
-    "bg-white !text-brand-deep-blue hover:bg-blue-50 shadow-md hover:shadow-xl focus-visible:ring-white",
+    "bg-white !text-brand-teal-deep hover:bg-brand-sky/10 shadow-md hover:shadow-xl focus-visible:ring-white",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

@@ -26,9 +26,9 @@ export function IoTVisual() {
         >
           <defs>
             <linearGradient id="lineGradient" x1="0" x2="1" y1="0" y2="0">
-              <stop offset="0%" stopColor="#0E56C8" stopOpacity="0.1" />
-              <stop offset="50%" stopColor="#0E56C8" stopOpacity="0.6" />
-              <stop offset="100%" stopColor="#0E56C8" stopOpacity="0.1" />
+              <stop offset="0%" stopColor="#0E7C8B" stopOpacity="0.1" />
+              <stop offset="50%" stopColor="#27AAE1" stopOpacity="0.6" />
+              <stop offset="100%" stopColor="#0E7C8B" stopOpacity="0.1" />
             </linearGradient>
           </defs>
           {/* Device to gateway lines */}
@@ -176,9 +176,9 @@ function FieldDeviceNode({
   align?: "left" | "right";
 }) {
   const colorMap = {
-    blue: "bg-brand-blue/10 text-brand-blue border-brand-blue/20",
-    green: "bg-emerald-50 text-emerald-600 border-emerald-200",
-    orange: "bg-amber-50 text-amber-600 border-amber-200",
+    blue: "bg-brand-sky/10 text-brand-sky border-brand-sky/30",
+    green: "bg-brand-green/10 text-brand-green border-brand-green/30",
+    orange: "bg-brand-orange/10 text-brand-orange border-brand-orange/30",
   };
 
   return (

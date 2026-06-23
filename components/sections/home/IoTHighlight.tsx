@@ -30,12 +30,13 @@ export function IoTHighlight() {
 
           {/* Content */}
           <div>
-            <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-blue-50 text-brand-blue mb-5">
-              IoT Solutions
+            <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-brand-sky/10 text-brand-sky mb-5">
+              Industrial IoT
             </span>
             <h2 className="text-display-md font-bold text-text-dark mb-4 text-balance">
               From Field Devices to Operational Insight
             </h2>
+            <div className="h-1 w-14 rounded-full bg-brand-sky mb-6" />
             <p className="text-base text-text-muted leading-relaxed mb-7">
               Nueva Modo delivers complete smart metering and infrastructure
               monitoring solutions across commercial buildings, industrial
@@ -43,11 +44,11 @@ export function IoTHighlight() {
               grid-connected assets.
             </p>
 
-            <FeatureGrid items={features} columns={2} className="mb-8" />
+            <FeatureGrid items={features} columns={2} className="mb-8" iconColor="green" />
 
             <Button
               href="/solutions/iot-solutions"
-              variant="primary"
+              variant="secondary"
               size="md"
               icon={<ArrowRight className="w-4 h-4" />}
             >

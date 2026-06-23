@@ -1,64 +1,50 @@
-import {
-  PackageCheck,
-  Cpu,
-  Globe,
-  Building2,
-  Layers,
-} from "lucide-react";
+import Image from "next/image";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { AFFILIATION_LOGOS } from "@/lib/constants";
 
-const items = [
-  {
-    icon: PackageCheck,
-    label: "Turnkey Delivery",
-  },
-  {
-    icon: Cpu,
-    label: "Hardware + Software Integration",
-  },
-  {
-    icon: Building2,
-    label: "Industrial & Commercial Environments",
-  },
-  {
-    icon: Globe,
-    label: "Infrastructure & Facilities Monitoring",
-  },
-  {
-    icon: Layers,
-    label: "Scalable Across Sites",
-  },
-];
+const marqueeLogos = [...AFFILIATION_LOGOS, ...AFFILIATION_LOGOS];
+
+function LogoTile({ name, src }: { name: string; src: string }) {
+  return (
+    <div className="flex h-32 w-72 shrink-0 items-center justify-center px-6 sm:h-36 sm:w-80 sm:px-7">
+      <Image
+        src={src}
+        alt={name}
+        width={320}
+        height={128}
+        className="max-h-28 w-auto max-w-full object-contain sm:max-h-32"
+      />
+    </div>
+  );
+}
 
 export function CredibilityStrip() {
   return (
-    <div className="bg-gradient-to-r from-brand-deep-blue via-[#0c3a8f] to-brand-deep-blue border-y border-brand-deep-blue/20 relative overflow-hidden">
-      {/* Subtle background accent */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 surface-grid opacity-5" />
-        <div className="absolute left-1/4 top-0 w-64 h-full bg-brand-blue/10 blur-2xl" />
-        <div className="absolute right-1/4 top-0 w-64 h-full bg-brand-green/10 blur-2xl" />
-      </div>
-      <div className="container-site py-5 relative">
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:justify-between">
-          {items.map((item) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={item.label}
-                className="flex items-center gap-2.5 text-white/70"
-              >
-                <Icon
-                  className="w-4 h-4 text-brand-green shrink-0"
-                  strokeWidth={1.75}
-                />
-                <span className="text-sm font-medium whitespace-nowrap">
-                  {item.label}
-                </span>
-              </div>
-            );
-          })}
+    <section
+      aria-label="Affiliations and certifications"
+      className="relative overflow-hidden bg-white border-b border-surface-border"
+    >
+      <div className="container-site pt-10 lg:pt-11">
+        <SectionHeader
+          title="Affiliations & Certifications"
+          labelColor="teal"
+          className="mb-10"
+        />
+
+        <div className="hidden motion-reduce:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center pb-10 lg:pb-11">
+          {AFFILIATION_LOGOS.map((logo) => (
+            <LogoTile key={logo.name} name={logo.name} src={logo.src} />
+          ))}
         </div>
       </div>
-    </div>
+
+      <div className="relative w-full overflow-hidden pb-10 lg:pb-11 motion-reduce:hidden">
+        <div className="flex w-max animate-marquee items-center gap-12 sm:gap-14">
+          {marqueeLogos.map((logo, index) => (
+            <LogoTile key={`${logo.name}-${index}`} name={logo.name} src={logo.src} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

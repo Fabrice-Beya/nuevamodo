@@ -76,7 +76,7 @@ export default function SoftwareSolutionsPage() {
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-blue-50 text-brand-blue mb-6">
+              <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-brand-green/10 text-brand-green mb-6">
                 Software Solutions
               </span>
               <h1 className="text-display-lg font-bold text-text-dark mb-5 text-balance">
@@ -135,6 +135,7 @@ export default function SoftwareSolutionsPage() {
           <SectionHeader
             label="Solution Types"
             title="What We Build"
+            labelColor="green"
             className="mb-12"
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -143,7 +144,7 @@ export default function SoftwareSolutionsPage() {
                 key={type.title}
                 className="p-6 bg-white border border-surface-border rounded-2xl card-hover"
               >
-                <div className="w-2 h-6 rounded-full bg-brand-blue mb-4" />
+                <div className="w-2 h-6 rounded-full bg-brand-green mb-4" />
                 <h3 className="text-base font-semibold text-text-dark mb-3">
                   {type.title}
                 </h3>
@@ -167,18 +168,19 @@ export default function SoftwareSolutionsPage() {
                 align="left"
                 className="mb-8"
               />
-              <FeatureGrid items={capabilities} columns={1} iconColor="blue" />
+              <FeatureGrid items={capabilities} columns={1} iconColor="green" />
             </div>
             <div>
               <SectionHeader
                 label="Where We Apply This"
                 title="Typical Use Cases"
                 align="left"
+                labelColor="green"
                 className="mb-8"
               />
-              <FeatureGrid items={useCases} columns={1} iconColor="blue" />
+              <FeatureGrid items={useCases} columns={1} iconColor="green" />
               <div className="mt-8">
-                <CapabilityChipGroup chips={chips} variant="blue" />
+                <CapabilityChipGroup chips={chips} variant="green" />
               </div>
             </div>
           </div>
@@ -201,7 +203,7 @@ export default function SoftwareSolutionsPage() {
         title="Discuss a Software Project"
         subtitle="Share the process or system you want to improve and we will help scope the right software solution."
         primaryCTA={{ label: "Discuss a Software Project", href: "/contact" }}
-        variant="blue"
+        variant="dark"
       />
     </>
   );

@@ -52,15 +52,15 @@ export default function IoTSolutionsPage() {
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 mb-6">
-                IoT Solutions
+              <span className="inline-flex items-center text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-brand-sky/10 text-brand-sky mb-6">
+                Industrial IoT
               </span>
               <h1 className="text-display-lg font-bold text-text-dark mb-5 text-balance">
-                IoT Solutions
+                Industrial IoT Solutions
               </h1>
               <p className="text-lg text-text-muted leading-relaxed">
-                Turnkey smart metering and industrial IoT solutions for
-                facilities, utilities, and critical infrastructure.
+                Turnkey, end-to-end smart metering and industrial IoT solutions
+                for facilities, utilities, and critical infrastructure.
               </p>
             </div>
             <SectionImage
@@ -119,6 +119,7 @@ export default function IoTSolutionsPage() {
                 label="Where We Deploy"
                 title="Use Cases & Environments"
                 align="left"
+                labelColor="sky"
                 className="mb-8"
               />
               <FeatureGrid items={useCases} columns={1} iconColor="blue" />
@@ -151,7 +152,7 @@ export default function IoTSolutionsPage() {
                 visibility, and better performance across all facility types
                 and critical industrial environments.
               </p>
-              <CapabilityChipGroup chips={chips} variant="green" />
+              <CapabilityChipGroup chips={chips} variant="sky" />
             </div>
           </div>
         </div>
@@ -161,7 +162,7 @@ export default function IoTSolutionsPage() {
         title="Discuss an IoT Project"
         subtitle="Tell us about the facilities, infrastructure, or assets you need to monitor and we will define the right IoT architecture."
         primaryCTA={{ label: "Discuss an IoT Project", href: "/contact" }}
-        variant="blue"
+        variant="dark"
       />
     </>
   );
