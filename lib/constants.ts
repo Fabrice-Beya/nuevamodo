@@ -42,6 +42,7 @@ export const AFFILIATIONS = [
   "Engineering Council of South Africa (ECSA)",
   "South African Institute of Electrical Engineers (SAIEE)",
   "Department of Labour",
+  "Durban Chamber of Commerce and Industry NPC",
 ];
 
 export const CERTIFICATIONS = ["ISO 9001", "ISO 14001", "OHSAS 18001", "National High-Tech Enterprise"];
@@ -55,6 +56,7 @@ export const AFFILIATION_LOGOS = [
   { name: "ISO 14001", src: "/affiliations/iso14001.png" },
   { name: "OHSAS 18001", src: "/affiliations/OHSAS18001.png" },
   { name: "Department of Labour", src: "/affiliations/labour.png" },
+  { name: "Durban Chamber of Commerce and Industry NPC", src: "/affiliations/chamber.png" },
 ];
 
 export const NAV_LINKS = [

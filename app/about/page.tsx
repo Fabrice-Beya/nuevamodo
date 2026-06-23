@@ -47,8 +47,9 @@ export default function AboutPage() {
                 experience across diverse industries, fields, and disciplines,
                 bringing over {COMPANY.combinedExperience} of combined experience
                 in power generation, petrochemical, mining, and transportation.
-                We are a non-racial and non-sexist organisation that attracts and
-                nurtures talent from all walks of life.
+                Each team member has been handpicked for their passion,
+                innovation, and expertise, and we are incredibly proud of the
+                team at Nueva Modo.
               </p>
             </div>
             <SectionImage
@@ -164,11 +165,19 @@ export default function AboutPage() {
                 Completely Above Board
               </h2>
               <div className="h-1 w-14 rounded-full bg-brand-green mb-6" />
-              <p className="text-base text-text-muted leading-relaxed mb-6">
+              <p className="text-lg text-text-dark leading-relaxed mb-5">
+                Nervous about getting electrical engineers in because you&apos;re
+                worried about the safety of your staff, premises, and equipment?
+              </p>
+              <p className="text-base text-text-muted leading-relaxed mb-5">
                 Working in the field of electrical engineering and nano-material
-                cleaning technology, safety is a factor of extreme importance to
-                us. We ensure that the necessary precautions are in place for
-                each of our service offerings.
+                cleaning technology, safety is a factor that is of extreme
+                importance to us. We ensure that there are the necessary
+                precautions in place for each of our service offerings.
+              </p>
+              <p className="text-base text-text-muted leading-relaxed mb-6">
+                We are completely above board, and are affiliated with SAIEE, and
+                ECSA, as well as the Department of Labour.
               </p>
               <div className="space-y-3">
                 {AFFILIATIONS.map((aff) => (
