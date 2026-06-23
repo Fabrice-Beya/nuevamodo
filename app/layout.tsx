@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nuevamodo.co.za"),
+  metadataBase: new URL("https://nuevamodo.com"),
   title: {
     default: "Nueva Modo | Electrical Engineering & Industrial Technology",
     template: "%s | Nueva Modo",
@@ -45,10 +45,10 @@ export const metadata: Metadata = {
     locale: "en_ZA",
     images: [
       {
-        url: "/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Nueva Modo — Electrical Engineering & Industrial Technology",
+        url: "/logo.png",
+        width: 1024,
+        height: 1024,
+        alt: "Nueva Modo logo",
       },
     ],
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Nueva Modo | Electrical Engineering & Industrial Technology",
     description:
       "Turnkey electrical engineering and industrial technology solutions, delivered end-to-end.",
-    images: ["/images/og-image.jpg"],
+    images: ["/logo.png"],
   },
   icons: {
     icon: "/logo.png",
