@@ -149,7 +149,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right column — form */}
+            {/* Right column - form */}
             <div className="lg:col-span-3">
               <ContactForm />
             </div>

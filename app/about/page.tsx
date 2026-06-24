@@ -39,7 +39,7 @@ export default function AboutPage() {
                 {COMPANY.legalName} was founded in {COMPANY.founded} on the idea
                 that in a rapidly changing world, we can always find new ways. We
                 challenge and tackle electrical engineering and industrial
-                problems — and in the process, we value respect, integrity, and
+                problems - and in the process, we value respect, integrity, and
                 openness.
               </p>
               <p className="text-base text-text-muted leading-relaxed">
@@ -240,7 +240,7 @@ export default function AboutPage() {
 
       <CTABand
         title="Discuss Your Project With Our Team"
-        subtitle="Tell us about your environment and objectives — we will help define the right solution."
+        subtitle="Tell us about your environment and objectives - we will help define the right solution."
         primaryCTA={{ label: "Discuss Your Project", href: "/contact" }}
         secondaryCTA={{ label: "View Our Solutions", href: "/solutions" }}
         variant="dark"

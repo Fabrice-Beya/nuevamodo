@@ -11,7 +11,7 @@ const innovations = [
     icon: Sparkles,
     accent: "gold" as const,
     description:
-      "A uniquely engineered, tried-and-tested solution for deep cleaning live electrical and electronic equipment — certified under ISO 9001, ISO 14001, and OHSAS 18001, and proven in over 11 countries.",
+      "A uniquely engineered, tried-and-tested solution for deep cleaning live electrical and electronic equipment - certified under ISO 9001, ISO 14001, and OHSAS 18001, and proven in over 11 countries.",
     points: [
       "Licensed for the Sub-Saharan African region",
       "Removes static, dust and grime; reduces noise",
@@ -25,7 +25,7 @@ const innovations = [
     icon: Flame,
     accent: "orange" as const,
     description:
-      "A simple, highly reliable automatic fire-extinguishing device that detects and suppresses fire at its source — without external power, smoke sensors, or complex pipework.",
+      "A simple, highly reliable automatic fire-extinguishing device that detects and suppresses fire at its source - without external power, smoke sensors, or complex pipework.",
     points: [
       "Detects heat and bursts at the hottest point",
       "Releases nano-particle suppression agent",

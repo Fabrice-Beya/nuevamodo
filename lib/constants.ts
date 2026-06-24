@@ -23,7 +23,7 @@ export const CONTACT = {
     "Kempton Park",
     "1609",
   ],
-  region: "Kempton Park, Gauteng — serving clients across South Africa",
+  region: "Kempton Park, Gauteng - serving clients across South Africa",
 };
 
 export const MANAGING_DIRECTOR = {
@@ -72,6 +72,11 @@ export const NAV_LINKS = [
         description: "Licensed, certified deep cleaning for live electrical equipment.",
       },
       {
+        label: "Industrial IoT Solutions",
+        href: "/solutions/iot-solutions",
+        description: "Turnkey smart metering and infrastructure monitoring systems.",
+      },
+      {
         label: "Electrical Engineering Services",
         href: "/solutions/electrical-engineering",
         description: "Protection & testing, commissioning, maintenance, energy audits, and drafting.",
@@ -80,11 +85,6 @@ export const NAV_LINKS = [
         label: "Process Control & Instrumentation",
         href: "/solutions/process-control",
         description: "Instrumentation, PLC, and SCADA integration for reliable processes.",
-      },
-      {
-        label: "Industrial IoT Solutions",
-        href: "/solutions/iot-solutions",
-        description: "Turnkey smart metering and infrastructure monitoring systems.",
       },
       {
         label: "Software Based Solutions",
@@ -108,10 +108,19 @@ export const SOLUTIONS = [
     title: "Nano-Material Cleaning Technology",
     slug: "nano-cleaning",
     summary:
-      "Tried and tested in over 11 countries and licensed for Sub-Saharan Africa — deep cleaning for live electrical equipment.",
+      "Tried and tested in over 11 countries and licensed for Sub-Saharan Africa - deep cleaning for live electrical equipment.",
     icon: "sparkles",
     color: "gold" as const,
     image: "/images/solutions/solution-monitoring.jpg",
+  },
+  {
+    title: "Industrial IoT Solutions",
+    slug: "iot-solutions",
+    summary:
+      "Turnkey, end-to-end smart metering and infrastructure monitoring across facilities, utilities, and critical assets.",
+    icon: "wifi",
+    color: "sky" as const,
+    image: "/images/hero/detail-smart-meters.jpg",
   },
   {
     title: "Electrical Engineering Services",
@@ -120,7 +129,7 @@ export const SOLUTIONS = [
       "Protection & testing, plant commissioning, maintenance, energy audits, thermographic surveys, and ECSA-signed engineering drawings.",
     icon: "zap",
     color: "orange" as const,
-    image: "/images/solutions/solution-process-control.jpg",
+    image: "/images/industries/industry-utilities.jpg",
   },
   {
     title: "Process Control & Instrumentation",
@@ -130,15 +139,6 @@ export const SOLUTIONS = [
     icon: "process",
     color: "teal" as const,
     image: "/images/solutions/solution-process-control.jpg",
-  },
-  {
-    title: "Industrial IoT Solutions",
-    slug: "iot-solutions",
-    summary:
-      "Turnkey, end-to-end smart metering and infrastructure monitoring across facilities, utilities, and critical assets.",
-    icon: "wifi",
-    color: "sky" as const,
-    image: "/images/solutions/solution-iot.jpg",
   },
   {
     title: "Software Based Solutions",
@@ -156,7 +156,8 @@ export const SOLUTIONS = [
       "A self-contained, power-free automatic suppression device that detects and extinguishes fire at its source.",
     icon: "flame",
     color: "orange" as const,
-    image: "/images/solutions/solution-iot.jpg",
+    image:
+      "https://images.unsplash.com/photo-1769442263053-a60acf73f00a?auto=format&fit=crop&w=1600&q=80",
   },
 ];
 
@@ -165,7 +166,7 @@ export const ELECTRICAL_SERVICES = [
     title: "Protection & Testing",
     icon: "shield-check",
     description:
-      "Full electrical protection audits and professional testing & setting for LV and MV circuit breakers — including speed and contact resistance testing, instrument and power transformer testing, secondary injection testing, underground cable fault location, and AC/DC pressure testing of power cables.",
+      "Full electrical protection audits and professional testing & setting for LV and MV circuit breakers - including speed and contact resistance testing, instrument and power transformer testing, secondary injection testing, underground cable fault location, and AC/DC pressure testing of power cables.",
   },
   {
     title: "Plant Commissioning",
@@ -177,13 +178,13 @@ export const ELECTRICAL_SERVICES = [
     title: "Maintenance",
     icon: "wrench",
     description:
-      "Electrical and mechanical maintenance strategies tailored to your plant — full motor and transformer maintenance, on-site visual inspections, oil sampling, and comprehensive reports with recommendations.",
+      "Electrical and mechanical maintenance strategies tailored to your plant - full motor and transformer maintenance, on-site visual inspections, oil sampling, and comprehensive reports with recommendations.",
   },
   {
     title: "Energy Audit & Efficiency",
     icon: "gauge",
     description:
-      "We collect field data across all your electrical consumers — from lighting to heavy energy converters — and deliver comprehensive reports with energy-efficient options tailored to your equipment and consumption.",
+      "We collect field data across all your electrical consumers - from lighting to heavy energy converters - and deliver comprehensive reports with energy-efficient options tailored to your equipment and consumption.",
   },
   {
     title: "Thermographic Survey",
@@ -195,7 +196,7 @@ export const ELECTRICAL_SERVICES = [
     title: "Engineering Design & Drafting",
     icon: "pencil-ruler",
     description:
-      "Design and drafting across all electrical disciplines, plus professional reticulation drawings for buildings, factories, and machine/factory processes — signed off by an ECSA-registered professional engineer.",
+      "Design and drafting across all electrical disciplines, plus professional reticulation drawings for buildings, factories, and machine/factory processes - signed off by an ECSA-registered professional engineer.",
   },
 ];
 
@@ -212,14 +213,15 @@ export const INDUSTRIES = [
     challenge: "Hazardous environments demanding precise instrumentation and safety.",
     fit: "Instrumentation, PLC/SCADA integration, maintenance, and fire suppression.",
     icon: "flame",
-    image: "/images/industries/industry-manufacturing.jpg",
+    image: "/images/hero/hero-background.jpg",
   },
   {
     title: "Mining",
     challenge: "Harsh conditions, heavy plant, and continuous operational demands.",
     fit: "Electrical maintenance, energy audits, and nano-material equipment cleaning.",
     icon: "mountain",
-    image: "/images/industries/industry-manufacturing.jpg",
+    image:
+      "https://images.unsplash.com/photo-1680463990599-9d318aaecf71?auto=format&fit=crop&w=1600&q=80",
   },
   {
     title: "Industrial & Manufacturing",
@@ -240,7 +242,7 @@ export const INDUSTRIES = [
     challenge: "Monitoring substations, meters, and distributed grid assets at scale.",
     fit: "End-to-end smart metering, substation monitoring, and infrastructure intelligence.",
     icon: "zap",
-    image: "/images/industries/industry-utilities.jpg",
+    image: "/images/hero/detail-smart-meters.jpg",
   },
   {
     title: "Municipal & Public Sector",
@@ -283,7 +285,7 @@ export const VISION =
   "To become the best performer in our line of work, and the supplier of choice to our customers and partners, by establishing professional relationships that are mutually beneficial.";
 
 export const MISSION =
-  "Our mission is simple — find new ways to provide the best products and services to our customers.";
+  "Our mission is simple - find new ways to provide the best products and services to our customers.";
 
 export const VALUE_PROPS = [
   {

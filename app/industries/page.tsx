@@ -16,8 +16,13 @@ export default function IndustriesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="section-py bg-white border-b border-surface-border">
-        <div className="container-site">
+      <section className="section-py bg-white border-b border-surface-border relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 surface-grid opacity-[0.08]" />
+          <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-brand-orange/[0.06] blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-brand-teal/[0.06] blur-3xl" />
+        </div>
+        <div className="container-site relative">
           <SectionHeader
             label="Industries"
             title="Industries & Environments"
@@ -42,8 +47,13 @@ export default function IndustriesPage() {
       </section>
 
       {/* Solutions cross-link */}
-      <section className="section-py bg-surface-soft">
-        <div className="container-site">
+      <section className="section-py bg-surface-soft relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 surface-grid opacity-[0.08]" />
+          <div className="absolute top-1/3 -left-24 h-96 w-96 rounded-full bg-brand-teal/[0.06] blur-3xl" />
+          <div className="absolute -bottom-24 right-1/4 h-96 w-96 rounded-full bg-brand-gold/[0.06] blur-3xl" />
+        </div>
+        <div className="container-site relative">
           <SectionHeader
             label="Related Solutions"
             title="Solutions That Serve These Environments"

@@ -9,7 +9,7 @@ export function IndustriesSection() {
     <section className="section-py bg-gradient-to-b from-slate-50 via-white to-slate-50/50 relative overflow-hidden">
       {/* Background accents */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 surface-grid opacity-8" />
+        <div className="absolute inset-0 surface-grid opacity-[0.08]" />
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-blue/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-green/5 rounded-full blur-3xl" />
       </div>

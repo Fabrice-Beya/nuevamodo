@@ -58,7 +58,7 @@ export default function FireExtinguisherPage() {
               temperature detectors, or complex pipework, simply place it inside
               the equipment to accurately detect and extinguish a fire at its
               initial stage. Project and single fire-extinguishing costs are
-              greatly reduced — with no harm to personnel.
+              greatly reduced - with no harm to personnel.
             </p>
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function FireExtinguisherPage() {
                   </div>
                   <h3 className="text-xl font-bold mb-3">Self-Contained & Reliable</h3>
                   <p className="text-sm text-white/75 leading-relaxed mb-6">
-                    Every unit is a complete suppression system — control unit,
+                    Every unit is a complete suppression system - control unit,
                     pressure gauge, heat-sensitive tube, and brass release nozzle
                     working together, with no reliance on external infrastructure.
                   </p>

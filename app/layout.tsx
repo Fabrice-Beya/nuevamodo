@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nueva Modo | Electrical Engineering & Industrial Technology",
     description:
-      "Turnkey electrical engineering and industrial technology — protection & testing, commissioning, process control, IoT, software, and nano-material cleaning.",
+      "Turnkey electrical engineering and industrial technology - protection & testing, commissioning, process control, IoT, software, and nano-material cleaning.",
     type: "website",
     locale: "en_ZA",
     images: [

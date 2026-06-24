@@ -10,7 +10,7 @@ import { CheckCircle2, BadgeCheck, AlertTriangle } from "lucide-react";
 export const metadata: Metadata = {
   title: "Nano-Material Cleaning Technology",
   description:
-    "A licensed, ISO-certified nano-material cleaning technology for live electrical equipment — tried and tested in over 11 countries.",
+    "A licensed, ISO-certified nano-material cleaning technology for live electrical equipment - tried and tested in over 11 countries.",
 };
 
 const problems = [
@@ -93,7 +93,7 @@ export default function NanoCleaningPage() {
               </h1>
               <p className="text-lg text-text-muted leading-relaxed mb-6">
                 A quick, easy, and effective way to clean your electrical and
-                electronic equipment — tried and tested in over 11 countries.
+                electronic equipment - tried and tested in over 11 countries.
               </p>
               <div className="flex flex-wrap gap-2">
                 {CERTIFICATIONS.map((cert) => (
@@ -157,7 +157,7 @@ export default function NanoCleaningPage() {
               <p className="text-sm text-text-muted leading-relaxed mb-6">
                 A uniquely engineered, well-researched solution that addresses
                 the well-known problem where deep cleaning of equipment is
-                usually a no-go zone — due to continuous operations, health and
+                usually a no-go zone - due to continuous operations, health and
                 safety considerations, secondary problems, and access
                 constraints.
               </p>
@@ -201,7 +201,7 @@ export default function NanoCleaningPage() {
             <SectionHeader
               label="Proven Results"
               title="See the Difference in the Field"
-              subtitle="Real before-and-after outcomes from live electrical equipment cleaned with our nano-material technology — without shutdown, without compromise."
+              subtitle="Real before-and-after outcomes from live electrical equipment cleaned with our nano-material technology - without shutdown, without compromise."
               labelColor="gold"
             />
           </div>

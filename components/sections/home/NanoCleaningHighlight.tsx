@@ -53,7 +53,7 @@ export function NanoCleaningHighlight() {
             <div className="h-1 w-14 rounded-full bg-brand-gold mb-6" />
             <p className="text-base text-text-muted leading-relaxed mb-6">
               A quick, effective, and uniquely engineered solution for
-              contamination on electrical and electronic equipment — tried and
+              contamination on electrical and electronic equipment - tried and
               tested in over 11 countries, and licensed exclusively to Nueva
               Modo across Sub-Saharan Africa.
             </p>

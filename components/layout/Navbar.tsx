@@ -243,7 +243,7 @@ export function Navbar() {
                             </Link>
                           </div>
                           <p className="text-xs text-text-muted leading-relaxed mt-4 border-t border-surface-border pt-4">
-                            Industrial & Digital Solutions — turnkey from field devices to dashboards.
+                            Industrial & Digital Solutions - turnkey from field devices to dashboards.
                           </p>
                         </div>
                         </div>

@@ -84,8 +84,12 @@ export default async function PublicationDetailPage({
                 <Button href="/contact" variant="primary" size="md">
                   Get in Touch
                 </Button>
-                <Button href="/solutions/nano-cleaning/" variant="outline" size="md">
-                  Nano Cleaning Solutions
+                <Button
+                  href={publication.relatedSolution?.href ?? "/solutions/nano-cleaning/"}
+                  variant="outline"
+                  size="md"
+                >
+                  {publication.relatedSolution?.label ?? "Nano Cleaning Solutions"}
                 </Button>
               </div>
             </div>
@@ -102,7 +106,6 @@ export default async function PublicationDetailPage({
                     className="object-cover"
                   />
                 </div>
-                <p className="text-xs text-text-muted">{publication.imageCredit}</p>
               </div>
             </div>
           </div>

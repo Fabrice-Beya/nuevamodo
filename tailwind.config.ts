@@ -12,13 +12,13 @@ const config: Config = {
       colors: {
         brand: {
           // Anchored on the Nueva Modo profile palette
-          blue: "#0E7C8B", // logo teal — primary brand colour
+          blue: "#0E7C8B", // logo teal - primary brand colour
           teal: "#0E7C8B",
           "teal-deep": "#0A4C57",
           "deep-blue": "#0A4C57", // legacy alias → deep teal (dark gradients)
           sky: "#27AAE1", // bright cyan accent
           green: "#54B948", // profile green
-          orange: "#F47B20", // profile orange — primary action accent
+          orange: "#F47B20", // profile orange - primary action accent
           "orange-deep": "#DD6A12",
           gold: "#D9A521", // profile gold/mustard
           charcoal: "#33363D",

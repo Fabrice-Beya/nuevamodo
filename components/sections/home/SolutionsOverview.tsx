@@ -9,7 +9,7 @@ export function SolutionsOverview() {
     <section className="section-py bg-surface-soft relative overflow-hidden">
       {/* Layered background for depth and variety */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 surface-dots opacity-30" />
+        <div className="absolute inset-0 surface-grid opacity-[0.08]" />
         {/* Soft brand-colored glows that echo the palette without overpowering */}
         <div className="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-brand-teal/[0.07] blur-3xl" />
         <div className="absolute top-1/3 -right-24 h-96 w-96 rounded-full bg-brand-orange/[0.06] blur-3xl" />

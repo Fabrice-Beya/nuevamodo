@@ -2,14 +2,14 @@
 @config "../tailwind.config.ts";
 
 @theme {
-  /* Nueva Modo brand palette — aligned to the company profile */
-  --color-brand-blue: #0E7C8B;        /* logo teal — primary brand */
+  /* Nueva Modo brand palette - aligned to the company profile */
+  --color-brand-blue: #0E7C8B;        /* logo teal - primary brand */
   --color-brand-teal: #0E7C8B;
   --color-brand-teal-deep: #0A4C57;
   --color-brand-deep-blue: #0A4C57;   /* legacy alias → deep teal */
   --color-brand-sky: #27AAE1;         /* bright cyan accent */
   --color-brand-green: #54B948;       /* profile green */
-  --color-brand-orange: #F47B20;      /* profile orange — action */
+  --color-brand-orange: #F47B20;      /* profile orange - action */
   --color-brand-orange-deep: #DD6A12;
   --color-brand-gold: #D9A521;        /* profile gold */
   --color-brand-charcoal: #33363D;

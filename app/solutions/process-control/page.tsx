@@ -26,7 +26,7 @@ const contentBlocks = [
   {
     title: "Instrumentation Selection & Integration",
     description:
-      "We specify and integrate the right field instrumentation for each process application—flow meters, pressure transmitters, temperature sensors, level gauges, and more. Every instrument is selected for accuracy, reliability, and compatibility with the wider control architecture.",
+      "We specify and integrate the right field instrumentation for each process application-flow meters, pressure transmitters, temperature sensors, level gauges, and more. Every instrument is selected for accuracy, reliability, and compatibility with the wider control architecture.",
   },
   {
     title: "PLC Systems",
@@ -101,7 +101,7 @@ export default function ProcessControlPage() {
               />
               <p className="text-base text-text-muted leading-relaxed">
                 Our process control and instrumentation work covers the full
-                engineering scope—from field device selection through to PLC
+                engineering scope-from field device selection through to PLC
                 programming, SCADA development, and commissioning. We deliver
                 systems that are built to perform reliably over the long term
                 in demanding industrial environments.

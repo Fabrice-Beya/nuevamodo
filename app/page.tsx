@@ -20,9 +20,9 @@ export default function HomePage() {
       <ValueProposition />
       <CredibilityStrip />
       <NanoCleaningHighlight />
+      <IoTHighlight />
       <StatsSection />
       <ElectricalHighlight />
-      <IoTHighlight />
       <SoftwareHighlight />
       <InnovationHighlight />
       <IndustriesSection />

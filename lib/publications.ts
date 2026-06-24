@@ -13,9 +13,68 @@ export interface Publication {
   imageAlt: string;
   imageCredit: string;
   content: PublicationBlock[];
+  relatedSolution?: { label: string; href: string };
 }
 
 export const PUBLICATIONS: Publication[] = [
+  {
+    slug: "lorawan-the-promise-for-industrial-iot-in-africa",
+    title:
+      "LoRaWAN: The Quiet Revolution in Industrial IoT for Africa",
+    date: "June 24, 2026",
+    time: "9:00 am",
+    category: "Industrial IoT Solutions",
+    excerpt:
+      "Long range, low power, and low cost. LoRaWAN is making industrial IoT viable across African conditions, and Nueva Modo can deploy it end to end.",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80",
+    imageAlt:
+      "Network infrastructure and connectivity cabling powering connected systems",
+    imageCredit: "Photo by Unsplash",
+    relatedSolution: {
+      label: "Explore Industrial IoT",
+      href: "/solutions/iot-solutions/",
+    },
+    content: [
+      {
+        type: "paragraph",
+        text: "For years, connecting assets in the field has been the hardest part of industrial IoT. Cellular data is expensive at scale, Wi-Fi does not reach far, and wired networks are costly to trench. LoRaWAN changes that equation, and it is especially well suited to African conditions.",
+      },
+      { type: "heading", text: "What Is LoRaWAN?" },
+      {
+        type: "paragraph",
+        text: "LoRaWAN is a wireless protocol built for long range and low power. A single gateway can cover several kilometres in dense areas and far more across open ground, while battery-powered sensors can run for years on a single charge. It is designed for small, frequent packets of data, exactly the kind of readings that meters, tanks, and sensors produce.",
+      },
+      { type: "heading", text: "Why It Matters in South Africa" },
+      {
+        type: "paragraph",
+        text: "Our operating environment is demanding. Sites are spread out, power is not always reliable, and connectivity can be patchy. LoRaWAN works around all three. Its long range covers sprawling municipal and industrial footprints, its low power draw survives load shedding, and it operates on free, license-exempt spectrum so there are no recurring airtime bills per device.",
+      },
+      { type: "heading", text: "The Business Case: OPEX and CAPEX" },
+      {
+        type: "paragraph",
+        text: "On CAPEX, one gateway can serve hundreds to thousands of devices, so the cost of adding each new sensor stays low. There is no trenching, no SIM card per node, and minimal site work.",
+      },
+      {
+        type: "paragraph",
+        text: "On OPEX, the savings compound. Battery life measured in years cuts maintenance visits, license-free spectrum removes data fees, and real-time visibility reduces unplanned downtime, energy waste, and losses. Money that used to be spent reacting to failures is redirected to preventing them.",
+      },
+      { type: "heading", text: "Proven Around the World" },
+      {
+        type: "paragraph",
+        text: "The technology is mature. Cities such as Amsterdam and Lyon run LoRaWAN networks for smart parking, waste, and environmental monitoring. Utilities across Europe and Asia use it for large-scale smart water and electricity metering, while industrial operators apply it to tank levels, cold-chain temperature, and predictive maintenance. The same playbooks transfer directly to our market.",
+      },
+      { type: "heading", text: "How Nueva Modo Delivers It" },
+      {
+        type: "paragraph",
+        text: "We provide LoRaWAN as a turnkey solution: gateways and sensors, network design and coverage planning, and our own platforms, Nueva MeterHub for device provisioning and Nueva Grid and Nueva EMS for monitoring, analytics, and reporting. You get a single partner from the field device to the dashboard.",
+      },
+      {
+        type: "paragraph",
+        text: "If you are looking to gain visibility over assets, energy, or infrastructure without the cost of traditional connectivity, LoRaWAN is the smart place to start. Get in touch and we will help you scope the right deployment.",
+      },
+    ],
+  },
   {
     slug: "nano-material-cleaning-future-of-electrical-equipment-cleaning",
     title:
@@ -24,7 +83,7 @@ export const PUBLICATIONS: Publication[] = [
     time: "11:43 am",
     category: "Nano-Material Cleaning Technology",
     excerpt:
-      "As an owner of expensive electrical equipment, keeping machines clean from dirt, dust, grime, and oil is crucial to their lifespan — and nano-material cleaning technology is the uniquely engineered solution.",
+      "As an owner of expensive electrical equipment, keeping machines clean from dirt, dust, grime, and oil is crucial to their lifespan - and nano-material cleaning technology is the uniquely engineered solution.",
     image:
       "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "Electrician inspecting an electrical distribution panel",
@@ -185,7 +244,7 @@ export const PUBLICATIONS: Publication[] = [
     time: "3:08 pm",
     category: "Nano-Material Cleaning Technology",
     excerpt:
-      "Mid-July saw unrest across KwaZulu-Natal and other parts of South Africa — and the wave of debris, dust, and smoke may have affected crucial electrical equipment long after the visible damage was cleared.",
+      "Mid-July saw unrest across KwaZulu-Natal and other parts of South Africa - and the wave of debris, dust, and smoke may have affected crucial electrical equipment long after the visible damage was cleared.",
     image:
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "Electrical technician working on industrial power equipment",

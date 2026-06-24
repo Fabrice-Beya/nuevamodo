@@ -37,7 +37,7 @@ export default function SolutionsPage() {
           <SectionHeader
             label="Solutions"
             title="Our Solutions"
-            subtitle="From electrical engineering and process control to connected systems, software, and our flagship innovations — delivered turnkey, end-to-end."
+            subtitle="From electrical engineering and process control to connected systems, software, and our flagship innovations - delivered turnkey, end-to-end."
             labelColor="orange"
             className="mb-14"
           />
@@ -76,7 +76,7 @@ export default function SolutionsPage() {
 
       <CTABand
         title="Not Sure Which Solution Fits?"
-        subtitle="Describe your environment and objectives—our team will help identify the right approach."
+        subtitle="Describe your environment and objectives-our team will help identify the right approach."
         primaryCTA={{ label: "Discuss a Project", href: "/contact" }}
         variant="dark"
       />

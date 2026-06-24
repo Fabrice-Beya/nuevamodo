@@ -54,7 +54,7 @@ const solutionTypes = [
   {
     title: "Business Platforms",
     description:
-      "Custom internal platforms designed around how your organisation works—field-to-office, operations-to-management, or department-to-department.",
+      "Custom internal platforms designed around how your organisation works-field-to-office, operations-to-management, or department-to-department.",
   },
   {
     title: "Data & Analytics",
@@ -121,7 +121,7 @@ export default function SoftwareSolutionsPage() {
             <p className="text-base text-text-muted leading-relaxed">
               Whether supporting operations, compliance, reporting, field
               activities, or internal service processes, our software solutions
-              are tailored to the way each organisation works—reducing
+              are tailored to the way each organisation works-reducing
               administrative burden and enabling teams to focus on higher-value
               activities.
             </p>
@@ -192,7 +192,7 @@ export default function SoftwareSolutionsPage() {
         <div className="container-site">
           <SectionImage
             src="/images/solutions/solution-software.jpg"
-            alt="Full-stack software capability — web, mobile, backend, AI"
+            alt="Full-stack software capability - web, mobile, backend, AI"
             aspectRatio="wide"
             className="w-full"
           />

@@ -79,14 +79,14 @@ export default function ElectricalEngineeringPage() {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-text-muted leading-relaxed mb-6">
               Are you looking to partner with a company that can find new ways to
-              tackle your engineering problems — one that thinks outside the box
+              tackle your engineering problems - one that thinks outside the box
               when it comes to creative, inventive solutions? Let us take the
               load off your shoulders.
             </p>
             <p className="text-base text-text-muted leading-relaxed">
               We help businesses optimise the electrical aspects of their
               operations. Through this experience, we&apos;re able to offer an
-              enhanced, tried-and-tested service you can truly rely on — no
+              enhanced, tried-and-tested service you can truly rely on - no
               matter what industry you&apos;re in.
             </p>
           </div>
@@ -146,7 +146,7 @@ export default function ElectricalEngineeringPage() {
               />
               <p className="text-base text-text-muted leading-relaxed mb-6">
                 Our team has a solid commissioning background with proven
-                competency levels — from verification of plant construction and
+                competency levels - from verification of plant construction and
                 design through to commercial operation and post-commissioning
                 support. We do it all.
               </p>

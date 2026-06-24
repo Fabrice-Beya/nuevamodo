@@ -60,7 +60,7 @@ export function Footer() {
             </p>
             <p className="text-sm text-white/55 leading-relaxed max-w-xs mb-6">
               A South African electrical engineering and industrial technology
-              company delivering turnkey solutions — from protection &amp;
+              company delivering turnkey solutions - from protection &amp;
               testing and process control to IoT, software, and licensed
               nano-material cleaning technology.
             </p>

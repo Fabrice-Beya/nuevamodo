@@ -4,9 +4,9 @@ import { ArrowRight, ChevronRight, Zap } from "lucide-react";
 
 const capabilityTags = [
   "Nano-Material Cleaning",
+  "Industrial IoT",
   "Protection & Testing",
   "Process Control",
-  "Industrial IoT",
   "Software Systems",
 ];
 
@@ -54,7 +54,7 @@ export function HeroSection() {
               {/* Sub */}
               <p className="text-lg text-white/70 leading-relaxed mb-9 max-w-xl">
                 Nueva Modo delivers turnkey electrical engineering and industrial
-                technology — from protection &amp; testing, commissioning, and
+                technology - from protection &amp; testing, commissioning, and
                 process control through to industrial IoT, software systems, and
                 our licensed nano-material cleaning technology.
               </p>
