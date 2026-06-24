@@ -14,7 +14,7 @@ export const CONTACT = {
   email: "info@nuevamodo.co.za",
   phone: "+27 11 568 7980",
   phoneDisplay: "(+27) 011 568 7980",
-  whatsapp: "+27 73 205 6738",
+  whatsapp: "+27 78 019 0558",
   website: "www.nuevamodo.co.za",
   addressLines: [
     "50 Electron Avenue",
@@ -32,7 +32,7 @@ export const MANAGING_DIRECTOR = {
   designation: "Pr Tech Eng",
   qualifications:
     "MBA · GCC (Factories) · BSc (Hons) Management of Technology · BTech Eng: Electrical",
-  mobile: "+27 73 205 6738",
+  mobile: "(078) 019-0558",
   email: "Xolani.Mntambo@nuevamodo.co.za",
 };
 
